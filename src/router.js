@@ -1,11 +1,17 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import CurrentWeather from "./views/CurrentWeather.vue";
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
+    {
+      path: "/CurrentWeather",
+      name: "currentWeather",
+      component: CurrentWeather
+    },
     {
       path: "/",
       name: "home",
